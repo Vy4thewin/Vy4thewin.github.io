@@ -1,5 +1,6 @@
 /*Javascript for SUMX
 Created by Vyanna Hill
+Give functionality to the button of Faq page
 */
 
 
@@ -15,7 +16,7 @@ btnC.style.display='none';
 
 btnSign.addEventListener("click",function(){
     signForm.style.display="none";
-    welcome.innerHTML="Hello,"+eMail;
+    welcome.innerHTML="Hello,"+eMail.value;
     btnC.style.display="inline";
 });
 

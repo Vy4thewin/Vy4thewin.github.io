@@ -1,4 +1,7 @@
-
+/*Javascript for Esum
+Created by Vyanna Hill
+    Usage is for the log in "page" of Esum
+*/
 var visText= document.getElementById("more");
 var button=document.getElementById("btn");
 visText.style.display="none";

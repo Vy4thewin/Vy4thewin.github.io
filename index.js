@@ -23,7 +23,7 @@ btnSign.addEventListener("click",function(){
     if(btnSign.innerHTML=="Log In"){
         eMail.style.display="none";
         btnSign.innerHTML="Log out";
-        welcome.innerHTML="Hello,"+eMail;
+        welcome.innerHTML="Hello,"+eMail.value;
             // Greet logged in User with database options 
 
         btnC.style.display="inLine";

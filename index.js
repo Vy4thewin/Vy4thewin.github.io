@@ -13,10 +13,10 @@ var btnDel=document.getElementById("btnDel");
 
 var welcome=document.getElementById("welcome");
 
-btn1.style.display='none';
-btnOrg.style.display='none';
-btnC.style.display='none';
-btnDel.style.display='none';
+btn1.style.display="none";
+btnOrg.style.display="none";
+btnC.style.display="none";
+btnDel.style.display="none";
 //hide all the sign in options 
 
 btnSign.addEventListener("click",function(){

@@ -22,12 +22,12 @@ btnDel.style.display="none";
 
 btnSign.addEventListener("click",function(){
     //Need a if statment that checks , email is used AND in database. else, send a alert to page
-    
+
     if(btnSign.innerHTML=="Log In"){
         eMail.style.display="none";
         btnSign.innerHTML="Log out";
         label.style.display="none";
-        welcome.innerHTML="Hello,"+eMail.value;
+        welcome.innerHTML="Hello, "+eMail.value;
             // Greet logged in User with database options, hide the log information 
 
         btnC.style.display="inLine";
@@ -43,6 +43,7 @@ btnSign.addEventListener("click",function(){
         btnDel.style.display="none";
         //When user "signs out", Hide logged in functions and "return" to home page
 
+        welcome.innerHTML="";
         eMail.style.display="inLine";
         btnSign.innerHTML="Log In";
 

@@ -43,11 +43,14 @@
         </p>   
     
         <aside>
-            <p>
-            For non-Admin users
-            <br>Admin uploaded the email threads?
-            <br>Click <a href="/Returning user"> here</a> to access your file
-            </p>
+            <p id="welcome"></p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="user@albany.edu" required>
+                <br><button id="btnLog" class="button">Log In</button>               
+            </form>
+         <br><button id="btnLA" class="button">View CC'D thread</button>
+       
         </aside>
             <!--Will connect users to a login page to retrieve their verison of the text file-->
 

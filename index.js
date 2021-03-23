@@ -7,7 +7,7 @@ Give functionality to the button of Faq page
 var btnSign=document.getElementById("btnLog");
 var eMail=document.getElementById("email");
 var btnC=document.getElementById("btnLA");
-var signForm=document.getElementById("signForm");
+
 var welcome=document.getElementById("welcome");
 
 
@@ -15,7 +15,8 @@ btnC.style.display='none';
 //hide all the sign in options
 
 btnSign.addEventListener("click",function(){
-    signForm.style.display="none";
+    eMail.style.display="none";
+    btnSign.style.display="none";
     welcome.innerHTML="Hello,"+eMail.value;
     btnC.style.display="inline";
 });

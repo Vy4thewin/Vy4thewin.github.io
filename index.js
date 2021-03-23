@@ -20,16 +20,28 @@ btnDel.style.display="none";
 //hide all the sign in options 
 
 btnSign.addEventListener("click",function(){
-    eMail.style.display="none";
-    btnSign.style.display="none";
-    welcome.innerHTML="Hello,"+eMail.value;
-    // Greet logged in User with database options 
+    if(btnSign.innerHTML=="Log In"){
+        eMail.style.display="none";
+        btnSign.innerHTML="Log out";
+        welcome.innerHTML="Hello,"+eMail.value;
+            // Greet logged in User with database options 
 
-    btnC.style.display="inLine";
-    btn1.style.display="inLine";
-    btnOrg.style.display="inLine";
-    btnDel.style.display="inLine";
-    //options for a Admin user will appear
+        btnC.style.display="inLine";
+        btn1.style.display="inLine";
+        btnOrg.style.display="inLine";
+        btnDel.style.display="inLine";
+            //options for a Admin user will appear
+    }else{
+        btn1.style.display="none";
+        btnOrg.style.display="none";
+        btnC.style.display="none";
+        btnDel.style.display="none";
+
+        eMail.style.display="inLine";
+        btnSign.innerHTML="Log In";
+
+    }
+   
 
 });
 
